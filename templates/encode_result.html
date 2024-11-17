@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encoded Video Result</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center">Encoded Video</h1>
+        <div class="text-center">
+            <h3>Video with Encoded Image</h3>
+            <video controls width="640" height="480">
+                <source src="{{ video_url }}" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <br>
+            <a href="{{ video_url }}" class="btn btn-primary mt-3" download>Download Video</a>
+        </div>
+        <div class="text-center mt-5">
+            <h3>Uploaded Image</h3>
+            <img src="{{ image_url }}" alt="Uploaded Image" class="img-fluid">
+            <br>
+            <a href="{{ image_url }}" class="btn btn-primary mt-3" download>Download Image</a>
+        </div>
+    </div>
+</body>
+</html>
